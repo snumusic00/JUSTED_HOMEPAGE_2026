@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AX Service — 저스티드</title>
+  <meta name="description" content="저스티드의 AX 방법론으로 기획·구현·운영·경험 설계를 하나의 흐름으로 연결합니다." />
+
+  <!-- SEO -->
+  <link rel="canonical" href="https://www.justed.co.kr/ax-service/" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="AX Service, AI 전환, 디지털 전환, 저스티드 AX, AI 기획, AI 구현" />
+  <meta name="author" content="(주)저스티드" />
+  <meta name="naver-site-verification" content="0ab4b9de6839d5e54430980211faf7683c722f8e" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="저스티드" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:url" content="https://www.justed.co.kr/ax-service/" />
+  <meta property="og:title" content="AX Service — 저스티드" />
+  <meta property="og:description" content="저스티드의 AX 방법론으로 기획·구현·운영·경험 설계를 하나의 흐름으로 연결합니다." />
+  <meta property="og:image" content="https://www.justed.co.kr/assets/images/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AX Service — 저스티드" />
+  <meta name="twitter:description" content="저스티드의 AX 방법론으로 기획·구현·운영·경험 설계를 하나의 흐름으로 연결합니다." />
+  <meta name="twitter:image" content="https://www.justed.co.kr/assets/images/og-image.jpg" />
+
+  <!-- JSON-LD: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "홈", "item": "https://www.justed.co.kr/" },
+      { "@type": "ListItem", "position": 2, "name": "AX Service", "item": "https://www.justed.co.kr/ax-service/" }
+    ]
+  }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-to-content">본문 바로가기</a>
+  <div id="scroll-progress"></div>
+
+  <header class="site-header" id="site-header">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <a href="../">
+          <img src="../assets/images/justed_logo.png" alt="저스티드" />
+        </a>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="../ax-service/" class="active">AX Service</a></li>
+        <li><a href="../business-solution/">Business Solution</a></li>
+        <li><a href="../epic-rd/">EPIC R&amp;D</a></li>
+        <li><a href="../about/">About</a></li>
+        <li><a href="../location/">Location</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 5h16M4 12h16M4 19h16"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-hidden="true" aria-label="모바일 메뉴">
+    <div class="mobile-nav-header">
+      <a href="../" class="mobile-nav-logo-link"><img src="../assets/images/justed_logo.png" alt="저스티드" class="mobile-nav-logo" /></a>
+      <button class="mobile-nav-close" id="mobile-nav-close" aria-label="메뉴 닫기">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <a href="../ax-service/">AX Service</a>
+    <a href="../business-solution/">Business Solution</a>
+    <a href="../epic-rd/">EPIC R&amp;D</a>
+    <a href="../about/">About</a>
+    <a href="../location/">Location</a>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" id="page-hero">
+      <div class="page-hero-bg-img" id="page-hero-bg-img" aria-hidden="true" style="background-image:url('/assets/images/hero/ax-service-hero.jpg')"></div>
+      <div class="page-hero-glow-1" id="page-hero-glow-1" aria-hidden="true"></div>
+      <div class="page-hero-glow-2" id="page-hero-glow-2" aria-hidden="true"></div>
+
+      <div class="page-hero-content">
+        <div class="hero-eyebrow" id="page-eyebrow">
+          <div class="hero-eyebrow-line" aria-hidden="true"></div>
+          <span class="hero-eyebrow-text">AI-Powered Digital Transformation</span>
+          <div class="hero-eyebrow-line hero-eyebrow-line-r" aria-hidden="true"></div>
+        </div>
+
+        <h1 class="page-hero-title" style="display:block;">
+          <span class="page-hero-title-inner" id="page-title-1">서비스를 만드는 일과</span>
+        </h1>
+        <div class="page-hero-title" style="margin-bottom: 24px;">
+          <span class="page-hero-title-inner gradient-text" id="page-title-2">경험을 설계하는 일은</span>
+        </div>
+
+        <p class="page-hero-subtitle" id="page-subtitle" style="color:#FFFFFF; font-size: clamp(26px,3.2vw,44px); font-weight:800; letter-spacing:-0.03em; margin-bottom:20px;">
+          하나의 과정입니다.
+        </p>
+
+        <p class="hero-tagline" id="page-tagline" style="margin-bottom:28px;">
+          One process. From concept to experience.
+        </p>
+
+        <p class="hero-desc" id="page-desc">
+          저스티드의 AX 방법론으로<br />기획·구현·운영·경험 설계를<br />
+          하나의 흐름으로 연결합니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- DIAGONAL DIVIDER -->
+    <div class="divider-diagonal divider-page-hero" aria-hidden="true"></div>
+
+    <!-- WHAT WE DO -->
+    <section class="content-section-light" id="what-we-do">
+      <div class="section-container">
+        <div class="section-header-block">
+          <p class="section-label" data-hero-anim>What We Do</p>
+          <h2 class="section-title" data-hero-anim>비즈니스 서비스 영역</h2>
+        </div>
+
+        <div class="feature-grid">
+          <!-- Card 1: WEB / Mobile APP -->
+          <div class="feature-card">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true">
+              <rect x="2" y="3" width="20" height="14" rx="2"/>
+              <path d="M8 21h8M12 17v4"/>
+              <rect x="7" y="7" width="4" height="7" rx="1"/>
+              <rect x="13" y="9" width="4" height="5" rx="1"/>
+            </svg>
+            <h3 class="feature-name">WEB / Mobile APP</h3>
+            <p class="feature-sub">사업의 얼굴을 만듭니다</p>
+            <p class="feature-desc">반응형 웹, 모바일 앱·웹, 커머스 플랫폼부터 CRM·ERP·LMS 등 기업 전용 시스템까지. 사용자 행동 분석 체계를 적용해 사업 구조에 맞는 디지털 채널을 구축합니다.</p>
+            <ul class="feature-highlight-list" aria-label="주요 특징">
+              <li>AI 사용자 행동 분석으로 전환율 향상 포인트 자동 도출</li>
+              <li>생성형 AI 기반 콘텐츠 개인화·추천 체계를 서비스에 내재화</li>
+              <li>AI 코드 리뷰·자동화 테스트로 개발 품질과 속도 동시 확보</li>
+            </ul>
+          </div>
+
+          <!-- Card 2: Cloud Transformation -->
+          <div class="feature-card">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true">
+              <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9z"/>
+            </svg>
+            <h3 class="feature-name">Cloud Transformation</h3>
+            <p class="feature-sub">사업의 뼈대를 바꿉니다</p>
+            <p class="feature-desc">레거시 시스템을 클라우드 환경으로 전환합니다. 환경 분석 → 클라우드 모델링 → 이전 → 구축·개발 → 지능형 모니터링 체계로 운영. 비용 구조와 운영 방식이 함께 바뀝니다.</p>
+            <ul class="feature-highlight-list" aria-label="주요 특징">
+              <li>실시간 데이터 파이프라인으로 비즈니스 판단의 정확도 향상</li>
+              <li>JIRA·Redmine 등 협업 도구 연동으로 팀 운영 효율화</li>
+              <li>트래픽과 사업 규모에 따른 유연한 확장</li>
+            </ul>
+          </div>
+
+          <!-- Card 3: Digital CX Strategy -->
+          <div class="feature-card">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true">
+              <path d="M3 3v18h18"/>
+              <path d="m19 9-5 5-4-4-3 3"/>
+            </svg>
+            <h3 class="feature-name">Digital CX Strategy</h3>
+            <p class="feature-sub">고객이 머무는 이유를 설계합니다</p>
+            <p class="feature-desc">고객이 서비스를 처음 만나는 순간부터 이탈하는 지점까지 전사 디지털 채널을 분석합니다. 저스티드의 DX 분석 방법론으로 고객 경험 개선 전략을 도출하고 시스템 도입까지 종합적으로 계획합니다.</p>
+          </div>
+
+          <!-- Card 4: UI/UX Design -->
+          <div class="feature-card">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" aria-hidden="true">
+              <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+              <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+              <path d="M2 2l7.586 7.586"/>
+              <circle cx="11" cy="11" r="2"/>
+            </svg>
+            <h3 class="feature-name">UI/UX Design</h3>
+            <p class="feature-sub">사용자가 이해하기 쉬운 구조를 만듭니다</p>
+            <p class="feature-desc">기업 전략에 맞는 UI/UX 설계를 바탕으로 비주얼 디자인을 진행합니다. 사용자 행동 데이터를 반영해 실제 사용 맥락을 우선합니다. AI 자동화 파이프라인으로 설계 의도가 구현 단계까지 손실 없이 이어집니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIAGONAL DIVIDER -->
+    <div class="divider-diagonal divider-light-to-dark" aria-hidden="true"></div>
+
+    <!-- PROCESS -->
+    <section class="content-section-dark" id="process">
+      <div class="dark-beam-1" aria-hidden="true"></div>
+      <div class="dark-beam-2" aria-hidden="true"></div>
+      <div class="dark-beam-glow" aria-hidden="true"></div>
+
+      <div class="section-container">
+        <div class="section-header-block">
+          <p class="section-label">Process</p>
+          <h2 class="section-title">고객사의 상황을 파악하고,<br />그 다음을 제안합니다</h2>
+        </div>
+
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="process-step-num" aria-hidden="true">01</div>
+            <h3 class="process-step-title">요구사항 분석</h3>
+            <p class="process-step-desc">사업 구조와 현황을 파악합니다. 무엇이 문제인지 정의합니다.</p>
+            <svg class="process-step-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" aria-hidden="true">
+              <path d="M5 12h14m-7-7l7 7l-7 7"/>
+            </svg>
+          </div>
+          <div class="process-step">
+            <div class="process-step-num" aria-hidden="true">02</div>
+            <h3 class="process-step-title">전략 수립</h3>
+            <p class="process-step-desc">목표와 제약 조건을 고려해 최적의 디지털라이징 방법론을 선정합니다.</p>
+            <svg class="process-step-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" aria-hidden="true">
+              <path d="M5 12h14m-7-7l7 7l-7 7"/>
+            </svg>
+          </div>
+          <div class="process-step">
+            <div class="process-step-num" aria-hidden="true">03</div>
+            <h3 class="process-step-title">설계·개발</h3>
+            <p class="process-step-desc">AI 전문가 그룹이 설계와 개발을 병행하고 최적의 품질을 도출합니다</p>
+            <svg class="process-step-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" aria-hidden="true">
+              <path d="M5 12h14m-7-7l7 7l-7 7"/>
+            </svg>
+          </div>
+          <div class="process-step">
+            <div class="process-step-num" aria-hidden="true">04</div>
+            <h3 class="process-step-title">모니터링</h3>
+            <p class="process-step-desc">런칭 이후에도 실제 사용자 경험과 데이터를 확인하여 개선합니다</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DIAGONAL DIVIDER -->
+    <div class="divider-diagonal divider-dark-to-white" aria-hidden="true"></div>
+
+    <!-- CTA -->
+    <section class="page-cta" id="cta">
+      <div class="page-cta-glow" aria-hidden="true"></div>
+      <div class="page-cta-line-top"></div>
+      <div class="section-container">
+        <div class="cta-grid">
+          <div class="cta-left">
+            <p class="section-label">Get in Touch</p>
+            <h2 class="cta-heading">어떤 디지털 서비스가<br />필요하신가요?</h2>
+            <p class="cta-desc">프로젝트 개요를 공유해 주시면 검토 후 연락드립니다.</p>
+          </div>
+          <div class="cta-right">
+            <div class="contact-channels">
+              <div class="contact-channel">
+                <p class="channel-title">이메일</p>
+                <div class="channel-links-row">
+                  <a href="mailto:support@justed.co.kr" class="channel-link">
+                    support@justed.co.kr
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-7-7l7 7l-7 7"/></svg>
+                  </a>
+                </div>
+              </div>
+              <div class="contact-channel">
+                <p class="channel-title">전화</p>
+                <div class="channel-links-row">
+                  <a href="tel:0220514877" class="channel-link">
+                    02-2051-4877
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true"><path d="M5 12h14m-7-7l7 7l-7 7"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <p class="footer-logo-text">(주)저스티드</p>
+          <img src="../assets/images/venture.svg" alt="벤처확인기업" class="footer-venture-img" />
+        </div>
+        <div class="footer-info-group">
+          <p class="footer-info-label">주소</p>
+          <p class="footer-info-value">서울 마포구 월드컵북로4길 76<br />JS빌딩 4층 (03993)</p>
+        </div>
+        <div class="footer-info-group">
+          <p class="footer-info-label">연락처</p>
+          <p class="footer-info-value">support@justed.co.kr<br />02-2051-4877</p>
+        </div>
+        <div class="footer-cert">
+          <a href="../assets/files/justed_회사소개서.pdf" class="footer-dl" download>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            회사소개서
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Justed Co., Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AX Service Hero: 우→좌 방향성, Forward Momentum -->
+  <script>
+    window.__heroInit = true;
+    window.addEventListener('load', function () {
+      if (typeof gsap === 'undefined') return;
+      var glow1      = document.querySelector('.page-hero-glow-1');
+      var glow2      = document.querySelector('.page-hero-glow-2');
+      var eyebrow    = document.getElementById('page-eyebrow');
+      var titles     = document.querySelectorAll('.page-hero-title-inner');
+      var sub        = document.getElementById('page-subtitle');
+      var tagline    = document.getElementById('page-tagline');
+      var desc       = document.getElementById('page-desc');
+      var wdLabel    = document.querySelector('#what-we-do .section-label');
+      var wdTitle    = document.querySelector('#what-we-do .section-title');
+
+      /* 초기 상태 — 오른쪽에서 진입 */
+      if (glow1) gsap.set(glow1, { x: 130, y: -80, scale: 0.5, opacity: 0 });
+      if (glow2) gsap.set(glow2, { x: -110, y: 70, scale: 0.6, opacity: 0 });
+      if (eyebrow) gsap.set(eyebrow, { x: 44, opacity: 0 });
+      if (titles.length) gsap.set(titles, { y: '100%' });
+      if (sub)     gsap.set(sub,     { opacity: 0, y: 22 });
+      if (tagline) gsap.set(tagline, { opacity: 0, x: 32 });
+      if (desc)    gsap.set(desc,    { opacity: 0, y: 18 });
+      if (wdLabel) gsap.set(wdLabel, { opacity: 0, x: -24 });
+      if (wdTitle) gsap.set(wdTitle, { opacity: 0, y: 56 });
+
+      /* 네비 */
+      gsap.to('.nav-menu li', { opacity: 1, y: 0, duration: 0.5, ease: 'power2.out', stagger: 0.07, delay: 0.3 });
+
+      var tl = gsap.timeline({ delay: 0.1 });
+      /* 글로우 — 모서리에서 정위치로 */
+      if (glow1) tl.to(glow1, { x: 0, y: 0, scale: 1, opacity: 1, duration: 1.2, ease: 'power3.out' }, 0);
+      if (glow2) tl.to(glow2, { x: 0, y: 0, scale: 1, opacity: 1, duration: 1.4, ease: 'power3.out' }, 0.2);
+      /* 아이브로: 오른쪽 슬라이드 */
+      if (eyebrow) tl.to(eyebrow, { x: 0, opacity: 1, duration: 0.55, ease: 'power3.out' }, 0.3);
+      /* 타이틀: 아래→위 커튼 */
+      titles.forEach(function (el, i) {
+        tl.to(el, { y: '0%', duration: 0.75, ease: 'power3.out' }, 0.52 + i * 0.17);
+      });
+      /* 서브타이틀 */
+      if (sub) tl.to(sub, { opacity: 1, y: 0, duration: 0.55, ease: 'power2.out' }, 0.93);
+      /* 태그라인: 오른쪽 슬라이드 */
+      if (tagline) tl.to(tagline, { opacity: 1, x: 0, duration: 0.55, ease: 'power2.out' }, 1.1);
+      /* 설명 */
+      if (desc) tl.to(desc, { opacity: 1, y: 0, duration: 0.5, ease: 'power2.out' }, 1.28);
+      /* What We Do 타이틀 — 히어로와 함께 */
+      if (wdLabel) tl.to(wdLabel, { opacity: 1, x: 0, duration: 0.6, ease: 'power3.out', overwrite: true }, 1.45);
+      if (wdTitle) tl.to(wdTitle, { opacity: 1, y: 0, duration: 0.9, ease: 'power4.out', overwrite: true }, 1.55);
+      /* 타임라인 완료 후 inline style 제거 — ScrollTrigger 재개입 방지 */
+      tl.call(function () {
+        if (wdLabel) gsap.set(wdLabel, { clearProps: 'opacity,x,transform' });
+        if (wdTitle) gsap.set(wdTitle, { clearProps: 'opacity,y,transform' });
+      });
+
+      /* 앰비언트: 오른쪽으로 흐름 */
+      if (glow1) gsap.to(glow1, { scale: 1.3, opacity: 0.8, x: 60, y: -20, duration: 14, ease: 'sine.inOut', yoyo: true, repeat: -1, delay: 1.5 });
+      if (glow2) gsap.to(glow2, { scale: 1.25, opacity: 0.7, x: 40, y: 30, duration: 18, ease: 'sine.inOut', yoyo: true, repeat: -1, delay: 2 });
+    });
+  </script>
+
+  <script src="../assets/js/main.js?v=2"></script>
+</body>
+</html>
