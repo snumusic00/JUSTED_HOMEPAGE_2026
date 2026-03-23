@@ -340,16 +340,25 @@
       var notice = document.getElementById('map-dev-notice');
       var roughmapEl = document.getElementById('daumRoughmapContainer1771998149166');
 
-      if (isLocal) {
-        /* 개발 환경: 안내 메시지 표시, roughmap 컨테이너 숨김 */
+      function showNotice() {
         if (notice) notice.style.display = 'flex';
         if (roughmapEl) roughmapEl.style.display = 'none';
+      }
+
+      if (isLocal) {
+        /* 개발 환경: 안내 메시지 표시 */
+        showNotice();
       } else {
-        /* 프로덕션: roughmap 초기화 */
+        /* 프로덕션: roughmap 초기화 시도, 실패 시 안내 메시지 표시 */
         if (notice) notice.style.display = 'none';
+        var retries = 0;
         (function initRoughmap() {
           var Lander = window.daum && window.daum.roughmap && window.daum.roughmap.Lander;
-          if (!Lander) { setTimeout(initRoughmap, 80); return; }
+          if (!Lander) {
+            if (++retries > 50) { showNotice(); return; } /* 약 4초 후 포기 */
+            setTimeout(initRoughmap, 80);
+            return;
+          }
           if (!window.daum.roughmap.instances['1771998149166']) {
             new Lander({ timestamp: '1771998149166', key: 'icyokcip9u8', mapWidth: '100%', mapHeight: '400' });
           }
