@@ -178,7 +178,7 @@
         <h2 class="section-title" style="color:#F5F5FF; max-width:640px; margin-bottom:40px;">빛나는 가치를<br />세상에 전하는 우리</h2>
         <p class="trust-quote">AI가 비즈니스 인프라를 재편하는 시대에도, 기술이 아닌 가치가 방향을 결정합니다. 신뢰와 소통을 바탕으로 의미 있는 IT 서비스를 만들어 나아갑니다.</p>
 
-        <p class="vision-slogan">저스티드와 함께 만드는 기술과 가치의 상호작용</p>
+        <p class="vision-slogan">저스티드와 함께 만들어 가는 기술과 가치의 상호작용</p>
       </div>
     </section>
 
@@ -417,7 +417,7 @@
       var sloganEl = document.querySelector('.vision-slogan');
       if (sloganEl && typeof ScrollTrigger !== 'undefined') {
         /* 한 줄로 글자 분리 */
-        sloganEl.innerHTML = '저스티드와 함께 만드는 기술과 가치의 상호작용'.split('').map(function(c) {
+        sloganEl.innerHTML = '저스티드와 함께 만들어 가는 기술과 가치의 상호작용'.split('').map(function(c) {
           return '<span class="sc">' + (c === ' ' ? '\u2009\u2009' : c) + '</span>';
         }).join('');
 
@@ -450,7 +450,7 @@
 
         /* 글로우 빌드업 (등장 시작과 동시, 4초에 걸쳐 서서히) */
         sloganTl.to(sloganEl, {
-          filter: 'drop-shadow(0 0 16px rgba(118, 88, 255, 0.7)) drop-shadow(0 0 44px rgba(72, 40, 200, 0.32)) drop-shadow(-32px 0 40px rgba(118, 88, 255, 0.45)) drop-shadow(32px 0 40px rgba(118, 88, 255, 0.45))',
+          filter: 'drop-shadow(0 0 14px rgba(118, 88, 255, 0.75)) drop-shadow(0 0 26px rgba(255, 200, 60, 0.60)) drop-shadow(0 0 44px rgba(72, 40, 200, 0.30)) drop-shadow(-30px 0 36px rgba(255, 175, 40, 0.38)) drop-shadow(30px 0 36px rgba(118, 88, 255, 0.45))',
           duration: 4.0,
           ease: 'power1.inOut'
         }, 0);
